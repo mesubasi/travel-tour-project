@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel and Tour Project</title>
+    <script type="text/javascript">
+      yazi = "Travel and Tour Project ";
+      function step() {
+        yazi = yazi.substr(1) + yazi.substr(0, 1);
+        document.title = yazi.substr(0, 30);
+      }
+    </script>
+  </head>
+  <body onload="setInterval(step,400)">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
